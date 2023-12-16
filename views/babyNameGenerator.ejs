@@ -1,0 +1,22 @@
+<%- include("partials/header.ejs") %>
+
+<h2>Random Baby Name Generator</h2>
+  <% if (locals.fname && locals.lname) { %>
+    <h1>
+      <%= fname %>
+        <%= lname %>
+    </h1>
+    <% } else { %>
+      <h1>Welcome to the Baby Name Generator 🤟</h1>
+      <% } %>
+
+
+
+        <form action="/babyNameGenerator" method="POST">
+          <input type="submit" value="Generate Name">
+        </form>
+
+<%- include("partials/footer.ejs") %>
+
+
+
