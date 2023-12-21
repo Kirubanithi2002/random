@@ -1,6 +1,6 @@
 import express from "express";
 import bodyParser from "body-parser";
-import http from "http";
+// import http from "http";
 
 const app = express();
 const port = 3000;
@@ -42,10 +42,10 @@ app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
 
-http.createServer(function (req, res) {
-  res.write('A Monk in Cloud'); //write a response to the client
-  res.end(); //end the response
-}).listen(3000);
+// http.createServer(function (req, res) {
+//   res.write('A Monk in Cloud'); //write a response to the client
+//   res.end(); //end the response
+// }).listen(3000);
 
 
 const adj = [
